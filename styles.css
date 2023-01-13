@@ -56,6 +56,10 @@ p{
   margin-bottom: 15px;
 }
 
+h4{
+  margin-top: 5px;
+}
+
 .game-selection-button {
   
   height: 130px;
@@ -80,6 +84,7 @@ p{
   align-content: center;
   border: none;
   background: none;
+  outline: none;
   margin: 0;
   padding: 0;
   /* justify-content: space-between; */
@@ -104,5 +109,11 @@ img {
   width: 10vh;
   height: 10vh;
 }
+
+.change-game {
+  border: none;
+}
+
+
 
 
