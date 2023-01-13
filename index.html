@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>RockPaperScissors</title>
+</head>
+<body>
+    <section class="sidebar human">
+      <img class="icon" src="assets/human-icon-png-1886.png" alt="human icon">
+      <h2>HUMAN</h2>
+      <p class="title-human" id="humanWins">Wins: 0</p>
+      <button class="change-game hidden" id="changeGame">CHANGE GAME?</button>
+    </section>
+    <section class="center-container">
+      <h1>Rock, Paper, Scissors</h1>
+      <h3>Choose your game!</h3>
+      <section class="game-selection-container">
+        <section class="game-button-container">
+          <button class="game-selection-button" id="classic">
+            <h4>CLASSIC</h4>
+              <p>rock > scissors<br>
+              paper > rock<br>
+              scissors > paper
+          </button>
+          <button class="game-selection-button" id="difficult">
+            <h4>DIFFICULT</h4>
+              <p>rock > scissors & lizard<br>
+                paper > rock & ufo<br>
+                scissors > paper & lizard<br>
+                lizard > paper & ufo<br>
+                ufo > scissors & rock<br>
+              </p>
+          </button>
+        </section>
+      </section>
+      <section class="image-buttons">
+        <section class="classic-buttons hidden">
+          <button class="pick" id="rock"> <img src="assets/happy-rocks.png" alt="rock"></button>
+          <button class="pick" id="paper"> <img src="assets/happy-paper.png" alt="paper"></button>
+          <button class="pick" id="scissors"> <img src="assets/happy-scissors.png" alt="scissors"></button>
+        </section>
+        <section class="difficult-buttons hidden">
+          <button class="pick" id="ufo"> <img src="assets/ufo.png" alt="ufo"></button>
+          <button class="pick" id="lizard"> <img src="assets/lizard.png" alt="lizard"></button>
+        </section>
+      </section>
+    </section>
+    <section class="sidebar computer">
+      <img class="icon" src="assets/computer-icon-1042.png" alt="computer icon">
+      <h2>COMPUTER</h2>
+      <p class="title-computer" id="computerWins">Wins: 0</p>
+    </section>
+</body>
+<script src="main.js"></script>
+<script src="player.js"></script>
+<script src="game.js"></script>
+</html>
+
+
+
 
