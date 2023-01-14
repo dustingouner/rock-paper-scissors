@@ -67,7 +67,7 @@ h4{
   
 }
 
-.image-buttons {
+/* .image-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -76,12 +76,15 @@ h4{
   align-content: center;
   flex-wrap: wrap;
   justify-content: center;
-}
+} */
 
 .classic-buttons, .difficult-buttons {
   display: flex;
   flex-direction: row;
   align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   border: none;
   background: none;
   outline: none;
@@ -112,6 +115,10 @@ img {
 
 .change-game {
   border: none;
+}
+
+.hidden {
+  display: none;
 }
 
 
