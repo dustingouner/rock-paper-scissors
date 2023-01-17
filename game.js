@@ -4,14 +4,12 @@ class Game {
     this.computer = new Player('computer', '💻');
     this.gameType = gameType;
     this.isADraw = null;
-    // this.humanChoice = '';
-    // this.computerChoice = '';
     this.winner = '';
     this.winnerMessage = '';
     this.humanPickImage = '';
     this.computerPickImage = '';
   }
-  // 1. function to keep track of data for game board
+ 
         selectedGame() {
           if (this.isADraw) {
             return this.addScore();
@@ -24,7 +22,6 @@ class Game {
         }
 
 
-  // 2. function to keep track of selected game type
 
         addScore() {
           if (this.isADraw) {
@@ -96,13 +93,13 @@ class Game {
 
   // 5. function to reset the Game's board to begin a new game.
 
-      // newGame() {
-      //   this.humanChoice = '';
-      //   this.computerChoice = '';
-      //   this.winner = '';
-      //   this.isADraw = null;
-      //   this.winnerMessage = '';
-      // }
+      newGame() {
+        this.humanChoice = '';
+        this.computerChoice = '';
+        this.winner = '';
+        this.isADraw = null;
+        this.winnerMessage = '';
+      }
   
   
 

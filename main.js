@@ -95,17 +95,19 @@ function showResults() {
   computerPick.src = currentGame.computerPickImage
   instructions.innerText = currentGame.winnerMessage
   setTimeout(function() {
-    if (currentGame.gameType = 'classic') {
+    if (currentGame.gameType === 'classic') {
       displayClassicGame();
       gamePicks.classList.add('hidden')
       humanIcon.classList.add('hidden')
-    } else if (currentGame.gameType = 'difficult') {
+    } else if (currentGame.gameType === 'difficult') {
       displayDifficultGame();
       gamePicks.classList.add('hidden')
+      humanIcon.classList.add('hidden')
     }
-  }, 5000)
+  }, 3500)
   
 }
+
 
 
 
