@@ -13,6 +13,10 @@ var changeGameButton = document.querySelector('.change-game')
 var instructions = document.querySelector('.instructions')
 var humanWins = document.getElementById('humanWins')
 var computerWins = document.getElementById('computerWins')
+var humanPick = document.getElementById('humanPick')
+var computerPick = document.getElementById('computerPick')
+var gamePicks = document.querySelector('.game-picks')
+var humanIcon = document.querySelector('.human-icon')
 var currentGame;
 
 
@@ -67,6 +71,7 @@ function chooseWeapon(event) {
   currentGame.checkForDraw();
   currentGame.selectedGame();
   updateScore();
+  showResults();
 }
 
 function takeTurn(player, eventId) {
@@ -82,8 +87,23 @@ function updateScore() {
 }
 
 function showResults() {
-  // display humanPick image and computerPickImage
-  // hide gameboard and game selection
+  gamePicks.classList.remove('hidden')
+  classicGameBoard.classList.add('hidden')
+  difficultGameBoard.classList.add('hidden')
+  humanIcon.classList.remove('hidden')
+  humanPick.src = currentGame.humanPickImage
+  computerPick.src = currentGame.computerPickImage
+  instructions.innerText = currentGame.winnerMessage
+  setTimeout(function() {
+    if (currentGame.gameType = 'classic') {
+      displayClassicGame();
+      gamePicks.classList.add('hidden')
+      humanIcon.classList.add('hidden')
+    } else if (currentGame.gameType = 'difficult') {
+      displayDifficultGame();
+      gamePicks.classList.add('hidden')
+    }
+  }, 5000)
   
 }
 
