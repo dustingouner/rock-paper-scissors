@@ -31,10 +31,10 @@ class Game {
             this.winnerMessage = 'It\'s a Draw!'
           } else if (this.winner === 'human') {
             this.human.wins++;
-            this.winnerMessage = 'Human Wins!';
+            this.winnerMessage = '😃 Human Wins! 😃';
           } else if (this.winner === 'computer') {
             this.computer.wins++;
-            this.winnerMessage = 'Computer Wins!';
+            this.winnerMessage = '😡 Computer Wins! 😡';
           }
           this.updatePickImages();
           
