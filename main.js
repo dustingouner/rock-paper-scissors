@@ -19,9 +19,6 @@ var gamePicks = document.querySelector('.game-picks')
 var humanIcon = document.querySelector('.human-icon')
 var currentGame;
 
-
-
-
 classicGameButton.addEventListener('click', newGame)
 difficultGameButton.addEventListener('click', newGame)
 changeGameButton.addEventListener('click', changeGame)
@@ -61,8 +58,6 @@ function newGame(event) {
   } else if (currentGame.gameType === 'difficult') {
     displayDifficultGame();
   }
-  
-  console.log(currentGame)
 }
 
 function chooseWeapon(event) {
@@ -105,7 +100,6 @@ function showResults() {
       humanIcon.classList.add('hidden')
     }
   }, 3500)
-  
 }
 
 
