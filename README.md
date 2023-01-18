@@ -4,7 +4,7 @@ Abstract:
 The website allows a user to play a simple game of rock, paper, scissors against the computer. A user is able to select their weapon of choice and the computer's weapon is randomly selected. The user can then see the game results with a message that displays who the winner is. Points are added to the sidebar depending on whether the computer or human won the game. If the result ends in a draw then no points are added. A user can also change the game to play a more difficult version which includes two additional weapons. 
 
 Installation Instructions:
-- A user can ford and clone the following repository:  https://github.com/dustingouner/rock-paper-scissors
+- A user can fork and clone the following repository:  https://github.com/dustingouner/rock-paper-scissors
 
 Preview of App:
 
