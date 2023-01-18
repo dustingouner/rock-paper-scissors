@@ -4,7 +4,6 @@ class Player {
     this.token = token;
     this.wins = 0;
     this.choice = '';
-
   }
   takeTurn(gameType, targetId) {
     var classicChoices = ['rock', 'paper', 'scissors'];
@@ -18,7 +17,5 @@ class Player {
     } else if (gameType === 'difficult') {
       return this.choice = difficultChoices[randomDifficult]
     }
-  
   }
-  
 }
